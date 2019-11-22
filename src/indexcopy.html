@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JobConnect</title>
+  <link rel="icon"  href="images/title.png">
+
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="hover.css">
+
+  <style>
+
+  // Extra small devices (portrait phones, less than 576px)
+  // No media query for `xs` since this is the default in Bootstrap
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { 
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  .nav { margin-bottom:0; }
+  .drop-mega { position: static; }
+  .drop-mega-menu { width: 100%; text-align: center;border-radius: 0px 0px 0px 0px;background-color: #e2e4e4;margin-top:-.22%;}
+  .drop-mega-menu>li { display: inline-block; }
+  .drop-mega:hover>.drop-mega-menu {
+    display: block;
+
+  }
+
+  #transforms{
+    display: inline-block;
+    overflow: hidden;
+  }
+  #transforms img{
+    display: block;
+  }
+  #transforms:hover img{
+    transform: scale(1.18);
+    transform-origin: 50% 50%;
+    transition : transform. 2s 
+  }
+  .zoom{
+    transform: scale(1.1);
+  }
+  .display2 {
+    opacity: 1;
+
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .diplay3  {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+li.nav-item > .bro_mj{
+  transition:  .3s ease;
+}
+
+.display1:hover .diplay3  {
+  opacity: 1;}
+  .display4{
+    opacity: 1;
+  }
+  #zoomer{
+    display: inline-block;
+    overflow: hidden;
+  }
+  #zoomer img{
+    display: block;
+
+  }
+  #zoomer:hover img{
+    transform: scale(1.08);
+    transform-origin: 50% 50%;
+    transition: transform .2s; 
+
+  }
+  .heffect:hover{
+    background-color: white
+  }
+  .items:hover{
+    color: white;
+    background-color: #233040;
+  }
+
+  body{
+    background-color: #e6e6e8
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+
+
+  <div class=" Brogrammers container-fluid d-lg-block d-none " id="starttop" style="background-color: #233040;"> 
+
+    <div class="Brogrammers row" >
+
+     <button class="btn btn-danger ml-auto" id="btn_md">Visitors: <span id="BroVisiting"></span></button>
+  </div>
+</div>
+
+<nav class=" Brogrammers navbar navbar-expand-lg navbar-dark border-bottom p-0 shadow-md" id="one" style="position: relative;background-color:#233040 ">
+  <span class=" Brogrammers navbar-toggler ml-2 mt-2"  data-toggle="collapse" id="main" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:hidden;">
+    <span class=" Brogrammers fa fa-align-justify text-light" id="second" style="font-size: 29px;"></span>
+  </span>
+  <div class=" Brogrammers navbar-brand text-info d-block d-lg-none ml-2" href="#"><a href="indexcopy.html"><img src="images/logo1.png" height="50px"  class=" Brogrammers ml-5" ></a></div>
+    <a class=" Brogrammers navbar-brand d-none d-lg-block" href="indexcopy.html" style="color: transparent;">
+   <img src="images/logo1.png" height="55px">aaaa</a>
+    <div class=" Brogrammers navbar-header d-block d-lg-none mt-sm-2">
+
+    
+     
+ <a class="nav-item avatar dropdown  d-none d-lg-block  mr-1" style="margin-top: -15%">
+  <div class="nav-link dropdown-toggle-" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+  aria-expanded="false">
+ <a href="" class="text-decoration-none text-light"><span type="" name="" id="BroUserName">user</span></a>
+  <img src="images/user.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+  <i class=" Brogrammers fa fa-chevron-down text-light" style="font-size: 9px"></i>
+
+</div>
+<div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenu">
+  
+  <a class="dropdown-item  items" href="INDEX.html">Logout</a>
+  
+</div>
+</a>
+
+
+
+   </div>
+
+
+   <div class=" Brogrammers collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class=" Brogrammers navbar-nav mr-auto">
+      <li class=" Brogrammers nav-item active ">
+
+
+        <div class=" Brogrammers nav-link d-block d-lg-none ">
+          <div class=" Brogrammers container-fluid p-0">
+            <div class=" Brogrammers accordion" id="accordionExample" style="border-radius: 0px 0px 0px 0px"> 
+              <div class=" Brogrammers card" style="border-radius: 0px 0px 0px 0px">
+                <div class=" Brogrammers card-header heffect" id="parent" data-toggle="collapse" data-target="#collapseOne" id="headingOne">
+                  <h5 class=" Brogrammers mb-0">
+                    <div   aria-expanded="true" aria-controls="collapseOne">
+                      <span class=" Brogrammers text-secondary "><a href="employees.html" class="text-decoration-none text-secondary">View Candidates</a></span>
+
+                      
+                      <div>
+                      </h5>
+                    </div>
+
+                    <div id="collapseOne" class=" Brogrammers collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class=" Brogrammers card-body p-0">
+
+                        <div class=" Brogrammers row p-0">
+                         
+                        </div>
+                      </div>
+                    </div>
+                   <div class=" Brogrammers card">
+                      <div class=" Brogrammers card-header heffect" id="headingThree">
+                        <h5 class=" Brogrammers mb-0">
+                          
+                            <span class=" Brogrammers text-secondary "><a href="#sample" class="text-decoration-none text-secondary">Sample Questions</a></span>
+
+                           
+                          </h5>
+                        </div>
+                      
+                      </div>
+                   
+                      <div class=" Brogrammers card">
+                        <div class=" Brogrammers card-header heffect" id="headingFour">
+                          <h5 class=" Brogrammers mb-0">
+                              <span class=" Brogrammers text-secondary"><a href="#what" class="text-decoration-none text-secondary">Tips for Interviews</a></span>
+
+                          </h5>
+                        </div>
+  
+                      </div>
+                      <div class=" Brogrammers card">
+                        <div class=" Brogrammers card-header heffect">
+                          <h5 class=" Brogrammers mb-0">
+
+                              <span class=" Brogrammers text-secondary "><a href="contact.html" class="text-decoration-none text-secondary">Contact Us</a></span>
+
+                          </h5>
+                        </div>
+  
+                      </div>
+                      <div class=" Brogrammers card" style="border-radius: 0px 0px 0px 0px;border-bottom: hidden;">
+                        <div class=" Brogrammers card-header heffect" id="headingSix">
+                          <h5 class=" Brogrammers mb-0">
+                            
+                              <span class=" Brogrammers text-secondary "><a href="aboutus.html" class="text-decoration-none text-secondary">About Us</a></span>
+                            
+                          </h5>
+                        </div>
+                        
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </li>
+              <li class=" Brogrammers nav-item active d-none d-lg-block h6 ">
+            <a class=" Brogrammers nav-link mx-1 bro_mj hvr-grow" href="indexcopy.html">
+              <span >Home</span> 
+            </a>
+
+            
+      
+       </li>
+              
+
+
+
+<li class=" Brogrammers nav-item d-none d-lg-block h6">
+            <a class=" Brogrammers nav-link mx-1 bro_mj hvr-grow" href="#sample">
+              <span >Sample Questions </span> 
+            </a>
+
+            
+      
+       </li>
+        
+
+
+
+       <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+
+        <a class=" Brogrammers nav-link mx-1 bro_mj hvr-grow" href="#what">
+          <span>Tips for Interviews</span> 
+        </a>
+
+
+      </li>
+  <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+          <a class=" Brogrammers nav-link  mx-1 bro_mj  hvr-grow" href="Employees.html">
+            <span >View Candidates </span> 
+          </a>
+
+        </li>
+          
+
+      <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+        <a class=" Brogrammers nav-link  mx-1 bro_mj  hvr-grow" href="contact.html">
+          <span >Contact Us </span> 
+        </a>
+
+      </li>
+       <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+        <a class=" Brogrammers nav-link  mx-1 bro_mj  hvr-grow" href="aboutus.html">
+          <span >About Us</span> 
+        </a>
+
+      </li>
+    </ul>
+    <ul class=" Brogrammers navbar-nav mt-md-2 ">
+   
+    <li class="nav-item avatar dropdown  d-none d-lg-block  mr-1" style="margin-top: -15%">
+  <div class="nav-link dropdown-toggle-" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+  aria-expanded="false">
+ <a href="" class="text-decoration-none text-light"><span type="" name="" id="BroUserName1">user</span></a>
+  <img src="images/user.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+  <i class=" Brogrammers fa fa-chevron-down" style="font-size: 9px"></i>
+
+</div>
+<div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenu">
+
+  <a class="dropdown-item  items" href="INDEX.html">Logout</a>
+  
+</div>
+</li> 
+
+  </ul>
+</div>
+</nav>
+
+<div class="container">
+
+
+</div>
+<div class="container-fluid p-0">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-12" style="background-image: url(images/cover.jpg);height: 650px;background-size: cover;position: relative;">
+
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <div class="row" style="background-image: url(images/cover11.jpg);height: 650px;background-size: cover;position: relative;"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="row" style="background-image: url(images/cover3.jpg);height: 650px;background-size: cover;position: relative;"></div>
+
+      </div>
+    </div>
+    <div class="row "  style="position: absolute;top:41%;left: 3.5%;">
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3 shadow-lg animated flip delay-.2s" id="zoomer">
+          <h5 class="card-title">Andriod</h5>
+          <a href="">
+            <img src="images/md.png" class="card-img-top  mb-3" alt="...">
+          </a>
+          <a href="" class="card-title mt-5">View Details</a>                
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3  shadow-lg animated flip delay-.2s" id="zoomer">
+          <h5 class="card-title">Java Development</h5>
+          <a href="">
+            <img src="images/java.png" class="card-img-top mb-3" alt="...">
+          </a>
+          <a href="" class="card-title mt-5">View Details</a>               
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3  shadow-lg  animated flip delay-.2s"  id="zoomer">
+          <h5 class="card-title">QA Tester</h5>
+          <a href="">
+            <img src="images/qa.png" class="card-img-top  mb-3" alt="...">
+          </a>
+          <a href="" class="card-title mt-5">View Details</a>    
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card p-3  shadow-lg  animated flip delay-.2s" id="zoomer">
+          <h5 class="card-title">Networking</h5>
+          <a href="">
+            <img src="images/network.jpg" class="card-img-top mb-3 " alt="...">
+          </a>
+          <a href="" class="card-title mt-5">View Details</a>    
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="fa fa-chevron-left text-dark fa-lg" aria-hidden="true" style="margin-top: -200%;margin-right: 50%"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="fa fa-chevron-right text-dark fa-lg" aria-hidden="true" style="margin-top: -200%;margin-left: 50%"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<div class="container">
+  <div class="col-6 offset-3 text-secondary mt-2 mb-2  h4">
+    <center>JobConnet gives you oppurtunities to get your dream job in multinational companies</center>
+  </div>
+</div>
+
+
+<div class="container text-light p-0 shadow-sm" style="position: relative;">
+
+    <div class="card mt-5">
+    <div class="col-md-12 p-0" id="zoomer">
+     <a href=""> <img src="images/content.jpg" class="img-fluid p-0" ></a>
+      <div style="position: absolute;top: 10%;left: 5%"><h4><span class="h2">JobConnect</span> has millions <br><br>of jobs, salary information,<br><br> company reviews, and <br><br> interview questions</h4></div>
+    </div>
+ 
+  </div>
+</div>
+
+<div class="container text-light shadow-sm">
+  <div class="card mt-4">
+    <div class="row p-0" style="position: relative;">
+  <div class="col-md-6 p-0"  id="zoomer">
+    <a href=""><img src="images/software.jpg" class="img-fluid"></a>
+    <div style="position: absolute;top: 10%;left:5%"><h4>Choose a job on <br> <span class="h2">JobConnect</span> you love, <br> and you will never have <br> to work a day in your <br> life.</h4></div>
+    </div>
+
+
+
+  <div class="col-md-6 p-0"  id="zoomer">
+    <a href=""><img src="images/mobile app.jpg" class="img-fluid"></a>
+    <div style="position: absolute;top: 10%;left:5%"><h4>Find the Job on <br><span class="h2">JobConnect
+      </span> that <br> Fits Your Life We <br> connect  people <br> and job opportunities.</h4></div>
+    </div>
+    </div>
+</div>
+
+  </div>
+
+</div>
+<div class="container text-light p-0 shadow-sm" style="position: relative;">
+
+
+    <div class="card mt-4 mb-3">
+    <div class="col-md-12 p-0" id="zoomer">
+      <img src="images/contecnt2.jpg" class="img-fluid p-0" >
+      <div style="position: absolute;top: 10%;left: 5%"><h4>Find the Job on <span class="h2">JobConnect
+      </span> that <br><br> Fits Your Life We connect people<br><br> and job opportunities.</h4></div>
+    </div>
+ 
+  </div>
+</div>
+
+<div class="container-fluid ">
+ <h4 class="text-center mt-4 mb-4" id="sample">Interview Questions</h4>
+ <div class="row" style="background-image: url(images/bg1.jpg);background-attachment: fixed;background-size: cover;">
+
+  <div class="col-md-6 text-center">
+
+  </div>
+  <div class="col-md-6 mt-3 mb-3">
+   <div class="card  shadow-lg">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="card-header bg-dark  text-light">
+           <h5>Questions Asked During Entery Level</h5>
+         </div>
+         <br>
+         <div class="col-md-12">
+           <h6>1. What can you tell me about yourself? </h6>
+           <small>Talk about yourself in summary and avoid rambling. Your detailed work history can be found on your CV, after all, so focus on elements that you want to highlight rather than going through everything.
+           </small>
+           <audio controls class=" mt-4 embed-responsive">
+            <source src="jobinterviewquestions.ogg" type="audio/ogg">
+              <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <br>
+            <div class="col-md-12">
+             <h6>2. Can you list your strengths? </h6>
+             <small>An exhaustive list of adjectives, such as ‘capable’, ‘hard-working’ or ‘diligent’, won’t really portray you well because anyone can make such claims about themselves. Instead, think about three things that you do well and give concrete examples.
+             </small>
+             <audio controls class=" mt-4 embed-responsive">
+              <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+              <br>
+              <div class="col-md-12">
+               <h6>3. What weaknesses do you have?</h6>
+
+               <small>Never say that you have no weaknesses. Everyone who does this comes across like they have simply not prepared for the interview. Likewise, avoid giving yourself a back-handed compliment, such.</small>
+               <audio controls class=" mt-4 embed-responsive">
+                <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                  <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                  </audio>
+
+
+                </div>
+                <br>
+                <div class="col-md-12">
+                 <h6>4. Why should I consider hiring you? </h6>
+                 <small>If you are highly qualified for the job you are applying for, then you should point this out, but don’t forget that other people being interviewed may match or exceed your suitability. In such cases, focus on what else you can bring to the job, perhaps with your soft skill set, like being able to integrate well with existing members of the team, for instance.
+                 </small>
+                 <audio controls class=" mt-4 embed-responsive">
+                  <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                    <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                  <br>
+                  <div class="col-md-12">
+                   <h6>5. Where do you see yourself five years from now? </h6>
+                   <small>This is your chance to talk about your wider ambitions and goals. It is okay to say you’d like to progress on from the position on offer in most cases. Bosses want to hire people with determination so don’t be shy about sounding ambitious or hungry for success..</small>
+                   <audio controls class=" mt-4 embed-responsive">
+                    <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                      <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+
+                    <br>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+          <div class="row " class="row" style="background-image: url(images/bg3.jpg);background-attachment: fixed;background-size: cover;">
+
+           <div class="col-md-6">
+             <div class="card shadow-lg">
+               <div class="row">
+                 <div class="col-md-12">
+                   <div class="card-header text-light" style="background-color: #233040">
+                     <h5>Questions Asked During Intermiate Level</h5>
+                   </div>
+                   <br>
+                   <div class="col-md-12">
+                     <h6>1. Can you tell me a little about yourself?</h6>
+                     <small>This question seems simple, so many people fail to prepare for it, but it's crucial. Here's the deal: Don't give your complete employment (or personal) history. Instead give a pitch—one that’s concise and compelling and that shows exactly why you’re the right fit for the job.</small>
+                     <audio controls class=" mt-4 embed-responsive">
+                      <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                        <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                        </audio>
+                      </div>
+                      <br>
+                      <div class="col-md-12">
+                       <h6>2. How did you hear about the position? </h6>
+                       <small>Another seemingly innocuous interview question, this is actually a perfect opportunity to stand out and show your passion for and connection to the company. For example, if you found out about the gig through a friend or professional contact.</small>
+                       <audio controls class=" mt-4 embed-responsive">
+                        <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                          <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                          </audio>
+                        </div>
+                        <br>
+                        <div class="col-md-12">
+                         <h6>3. What do you know about the company?</h6>
+
+                         <small>Any candidate can read and regurgitate the company’s “About” page. So, when interviewers ask this, they aren't necessarily trying to gauge whether you understand the mission—they want to know whether you care about it.</small>
+
+                       </div>
+                       <br>
+                       <div class="col-md-12">
+                         <h6>4. Why do you want this job?</h6>
+                         <small>Again, companies want to hire people who are passionate about the job, so you should have a great answer about why you want the position. (And if you don't? You probably should apply elsewhere).</small>
+                         <audio controls class=" mt-4 embed-responsive">
+                          <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                            <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                            </audio>
+                          </div>
+                          <br>
+                          <div class="col-md-12">
+                           <h6>5. Why should we hire you? </h6>
+                           <small>This is your chance to talk about your wider ambitions and goals. It is okay to say you’d like to progress on from the position on offer in most cases. Bosses want to hire people with determination so don’t be shy about sounding ambitious or hungry for success.</small>
+                           <audio controls class=" mt-4 embed-responsive">
+                            <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                              <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                              </audio>
+                            </div>
+                            <br>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"></div>
+
+                  </div>
+                </div>
+
+
+
+                <div class="container-fluid">
+                  <div class="row " class="row" style="background-image: url(images/bg2.jpg);background-attachment: fixed;background-size: cover;">
+
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                     <div class="card shadow-lg">
+                       <div class="row" >
+                         <div class="col-md-12">
+                           <div class="card-header bg-info text-light">
+                             <h5>Most Asked Questions </h5>
+                           </div>
+                           <br>
+                           <div class="col-md-12">
+                             <h6>1. Tell me about yourself.</h6>
+                             <small>This is one of the first questions you are likely to be asked. Be prepared to talk about yourself, and why you're an excellent fit for the job. Try to answer questions about yourself without giving out too much, or too little, personal information. You can start by sharing some of your personal interests and experiences that don't relate directly to work. 
+                             </small>
+                             <audio controls class=" mt-4 embed-responsive">
+                              <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                                <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                                </audio>
+                              </div>
+                              <br>
+                              <div class="col-md-12">
+                               <h6>2. Why should we hire you?</h6>
+                               <small>Are you the best candidate for the job? Be prepared to say why you're the applicant who should be hired. This is not the time to be modest (although neither should you be conceited). </small>
+                               <audio controls class=" mt-4 embed-responsive">
+                                <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                                  <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                                  </audio>
+                                </div>
+                                <br>
+                                <div class="col-md-12">
+                                 <h6>3. What is your greatest strength?</h6>
+
+                                 <small>This is one of the questions that employers almost always ask. When you are asked about your greatest strengths, it's important to discuss the attributes that will qualify you for the specific job and set you apart ..</small>
+                                 <audio controls class=" mt-4 embed-responsive">
+                                  <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                                    <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                                    </audio>
+
+                                  </div>
+                                  <br>
+                                  <div class="col-md-12">
+                                   <h6>4. What is your greatest weakness? </h6>
+                                   <small>If you are highly qualified for the job you are applying for, then you should point this out, but don’t forget that other people being interviewed may match or exceed your suitability. In such cases, focus on what else you can bring to the job, perhaps with your soft skill set, like being able to integrate well with existing members of the team, for instance.
+                                   </small>
+                                 </div>
+                                 <br>
+                                 <div class="col-md-12">
+                                   <h6>5. Why are you leaving or why have you left your job? </h6>
+                                   <small>This is your chance to talk about your wider ambitions and goals. It is okay to say you’d like to progress on from the position on offer in most cases. Bosses want to hire people with determination so don’t be shy about sounding ambitious or hungry for success.</small>
+                                   <audio controls class=" mt-4 embed-responsive">
+                                    <source src="jobinterviewquestions.ogg" type="audio/ogg">
+                                      <source src="jobinterviewquestions.mp3" type="audio/mpeg">
+                                      </audio>
+                                    </div>
+                                    <br>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+  <h4 class="text-center mt-4 mb-4" id="what">Tips for Employers</h4>
+  <div class="container-fluid mt-4">
+    <div class="card p-3  shadow-lg">
+  <div class="row">
+
+    <div class="col-md-4 mb-2 mt-2">
+      <img src="images/interviewer1.jpg" class="img-fluid img-thumbnail p-0">
+    </div>
+    <div class="col-8">
+      <small>
+      <h6>1. Focus on behavioral and situational questions.</h6>
+
+      <ul>
+        <li>Approach a job interview the way you would a test. It's important to study detailed information about the company where you're applying so you're ready to talk about how your skills are a good fit for its business.
+        </li>
+        <li>To stand out from the pack, do enough research to be able to discuss the company's recent merger or new business model, says Kelly Marinelli.
+        </li>
+        <li> principal people strategy consultant at Solve HR. "It really shows your passion for the specific role and the company, and that's something that sets you apart."
+        </li>
+        <li>Besides, preparing thoroughly may help calm your nerves.
+        </li>
+        <li>"You get confidence from competence," says Bill Cole, chief executive of William B. Cole Consultants.
+        </li>
+        <li> principal people strategy consultant at Solve HR. "It really shows your passion for the specific role and the company, and that's something that sets you apart."
+        </li>
+        <li>Besides, preparing thoroughly may help calm your nerves.
+        </li>
+        <li>Go into the interview armed with information about the person with whom you'll be conversing. You may discover a shared interest you can talk about to build rapport.</li>
+      </ul>
+</small>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid mt-4">
+    <div class="card p-3  shadow-lg">
+  <div class="row">
+    
+    <div class="col-8">
+      <small>
+      <h6>2. Focus on behavioral and situational questions</h6>
+       <ul>
+         <li>
+            You can talk about to build rapport. Or you may find out that the interviewer has connections at one of your past employers.
+         </li>
+         <li>
+           We all know it's wrong to judge a book by its cover – but interviewers often do just that. Show up to your interview looking too informal or disheveled.
+         </li>
+         <li>
+            You may make a bad impression before you even introduce yourself.
+         </li>
+         <li>
+           Arriving a few minutes early – experts recommend about 10 minutes – serves two purposes. It proves that you're organized, reliable and eager
+         </li>
+         <li>
+           It also allows you to take some time to compose yourself, use the restroom and prepare for the impending conversation.
+         </li>
+         <li>
+           You may be tempted to arrive very early, but don't. It may inconvenience your interviewer.
+         </li>
+         <li>
+           "I have countless candidates show up a half hour early, and it's irritating. It starts the interview off on the wrong foot," Marinelli says. Instead, she advises, "sit in your car until five or 10 minutes before."
+         </li>
+       </ul>
+</small>
+
+    </div>
+<div class="col-md-4 mb-2 mt-2"><img src="images/pGUDppb.jpg" class="img-fluid p-0 img-thumbnail"></div>
+  </div>
+</div>
+</div>
+
+
+
+ <div class="container-fluid mt-4">
+    <div class="card p-3  shadow-lg">
+  <div class="row">
+    <div class="col-md-4 mb-2 mt-2"><img src="images/interviewer2.jpg" class="img-fluid p-0 img-thumbnail"></div>
+    <div class="col-8">
+      <small>
+      <h6>3. Practice your pitch</h6>
+      
+      <ul>
+        <li>
+          Even if you're simply checking the time, stealing glances at your cellphone may come across as rude or suggest you're easily distracted. 
+        </li>
+        <li>
+          Before you go into the interview room, turn off your devices and store them out of sight. You may be accustomed to taking notes on your phone.
+        </li>
+        <li>
+          In a job interview, use a pen and a paper notebook instead.
+        </li>
+        <li>
+          Don't ask anything that betrays ignorance of the company's basic information. If it's available on the website, you should know about it.
+        </li> 
+        <li>
+          "These days, there's no excuse for job seekers not to do a little bit of research," Marinelli says. "The last thing employers want to see is that someone just wants a job and it doesn't matter to them that they're interviewing with us."
+        </li> 
+        <li>
+          Don't ask anything that betrays ignorance of the company's basic information. If it's available on the website, you should know about it.
+        </li>
+        <li>
+          These days, there's no excuse for job seekers not to do a little bit of research," Marinelli says. "The last thing employers want to see is that someone just wants a job and it doesn't matter to them that they're interviewing with us.
+        </li>
+      </ul>
+      </small>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<div class="container-fluid mt-4">
+    <div class="card p-3 shadow-lg">
+  <div class="row">
+    
+    <div class="col-8">
+      <small>
+      <h6>4. Prepare a checklist to sell your company</h6>
+      <ul>
+        <li>
+          Nothing reveals a bad attitude like excessively criticizing your current or previous employers. Your interviewer will instantly wonder whether you'd talk about her and her company that way if she hired you.
+        </li>
+        <li>
+          Using a friendly tone is nice, but it's important not to cross a line by sharing too much personal information.
+        </li>
+        <li>
+          Remember, you never know how the person sitting across from you will react to a story about your weekend antics.
+        </li>
+        <li>
+         Women are especially prone to deflecting credit for their accomplishments and should practice explaining their qualifications and describing their talents.
+        </li>
+        <li>
+          You only get limited time with the interviewer, so stay focused on your professional accomplishments and the company's needs.
+        </li>
+        <li>
+          Experts agree: Job candidates should never bring up the topic of salary first, because it puts them in a weaker negotiation position. 
+        </li>
+        <li>
+          Additionally, talking about it too early may give the impression that you're only interested in the job for its perks. So save this conversation for after you've been offered the job.
+        </li>
+        <li>
+          Communication goes beyond words. It's important to make eye contact while listening and speaking.
+        </li>
+        <li>
+          However, you should be prepared to talk about your salary expectations in case the interviewer raises the topic. See more advice about salary negotiations.
+        </li>
+      </ul>
+</small>
+    </div>
+<div class="col-md-4 mb-2 mt-2"><img src="images/interviewer3.png" class="img-fluid p-0 img-thumbnail"></div>
+  </div>
+</div>
+</div>
+
+ <div class="container-fluid mt-4">
+    <div class="card p-3  shadow-lg">
+  <div class="row">
+    <div class="col-md-4 mb-2 mt-2"><img src="images/fail.jpeg" class="img-fluid p-0 img-thumbnail"></div>
+    <div class="col-8">
+      <small>
+      <h6>5. how to fight bias in your interviewing process ?</h6>
+      
+      <ul>
+        <li>
+          This is not the time to be humble. Don't assume the interviewer will remember every detail from your resume about the awards you've won or the sales goals you've exceeded. 
+        </li>
+        <li>
+         Women are especially prone to deflecting credit for their accomplishments and should practice explaining their qualifications and describing their talents.
+        </li>
+        <li>
+          On the other hand, it's a mistake to come on too strong. Don't brag to the point of arrogance, and don't try to dominate the conversation.
+        </li>
+
+        <li>
+          "Some people, many in sales or marketing or who have stronger personalities, they will tend to take over the interview. They're controlling the situation too much," Cole says. "You want to vet the interviewer, but you can't give even a hint that you're doing so, because you'll come across as an overbearing control freak."
+        </li> 
+        <li>
+          From an employer's perspective, the purpose of a job interview is to determine whether a candidate is a good match for the company's needs.
+        </li> 
+        
+        
+      </ul>
+      </small>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid"> <!-- hvr-bounce-in -->
+  <a href="#starttop" class="btn  bg-danger text-light hvr-push "  
+  style="border-radius: 50%;width: 50px;height: 50px;position: absolute;right: 1%;top:85%;position: fixed;">
+  <i class="fa fa-chevron-up fa-lg" style="margin-top: 10px"></i>
+</a>
+
+</div>
+
+<div class="container-fluid p-0 fixed-bottom text-light small" style="background-color: #233040">
+  <marquee behavior="scroll" direction="left" width="100%" scrolldelay="2" scrollamount="7" class="textwhite" onmouseover="this.stop()" onmouseout="this.start()">
+<!-- &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; --><span id="BroShow"><!-- &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; -->
+</span></marquee>
+</div>
+
+
+  <footer class="" style="background-color: #dfdfdf">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mt-5 mb-5">
+        <img src="images/logo1.png" width="150px" class="img-fluid" alt="">
+        <br> <br> <br> <br>
+        <h5>Subscribe Now</h5>
+        <form action="" class="input-group">
+          <input type="email" required class="form-control shadow-sm">
+          <div class="input-group-append">
+            <button class="btn btn-dark" type="submit">Send</button>
+          </div>
+          
+        </form>
+      </div>
+       <div class="col-md-4 mt-5 mb-5">
+                                    <h5>Information</h5>
+                                    <ul class="list-unstyled">
+                                      <li class="mb-2"><a href="#" class="text-decoration-none text-dark ">
+                                        job-Connect is the #1 job site in the world1 with over 1 million unique visitors every month. Job Connect strives to put job seekers first, giving them free access to search for jobs,post CVs, and research companies. Every day, we connect thousands of people to new opportunities.
+                                      </li> 
+                                    </ul>
+                                  </div>
+      
+      <div class="col-md-2 mt-5 mb-5">
+        <h5>Our Services</h5>
+        <ul class="list-unstyled">
+                                      <li class="mb-2">
+                                        
+                                      <li class="mb-2"><a href="#sample" class="text-decoration-none text-dark">Sample Question</a></li> 
+                                      <li class="mb-2"><a href="#interview" class="text-decoration-none text-dark">Interview Etiqauetes</a></li> 
+                                      <li class="mb-2"><a href="aboutus.html" class="text-decoration-none text-dark">About Us</a></li> 
+                                      <li class="mb-2"><a href="contact.html" class="text-decoration-none text-dark">Contact Us</a></li> 
+                                    </ul>
+      </div>
+      <div class="col-md-3 mt-5 mb-5">
+        <h5>Contact Us</h5>
+        <span class="fa fa-phone mr-3 mb-3"></span><i>0213-2139765</i> <br>
+        <span class="fa fa-map-marker-alt mr-3 mb-3"></span><i>MC-1675, Defence, Karachi.</i> <br>
+        <span class="fa fa-envelope mr-3"></span><i>job-connect@gmail.com</i>
+        <br>
+        <br>
+        <br>
+        <a href=""><span class="fab fa-facebook-square fa-lg ml-4 mr-4"></span></a>
+                                    <a href=""><span class="fab fa-twitter-square fa-lg mr-4"></span></a>
+                                    <a href=""><span class="fab fa-instagram fa-lg mr-4"></span></a>
+                                    <a href=""><span class="fab fa-google-plus-square fa-lg mr-4"></span></a>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center p-2 small" >
+      <p class="">©2019 <a href="index.html">Jobs Connect</a> , Inc. All rights reserved.</p>
+    </div>
+  </div>
+   </footer>
+
+
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+  var audio = new Audio("jobinterviewquestions.mp3" ) ;
+  $(document).ready(function(){
+    var countaudio=1;
+    $("#checkaudio_1").click(function(){
+      if(countaudio){
+      $(this).attr("onclick","audio.pause()");
+      $(this).removeClass("fa-play-circle").addClass("fa-pause-circle");
+
+      countaudio=0;
+    }
+    else{
+      $(this).attr("onclick","audio.play()");
+      $(this).removeClass("fa-pause-circle").addClass("fa-play-circle");
+      countaudio=1;
+    }
+      
+    });
+    
+  });
+
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    var i=1;
+
+    $("#parent").click(function(){
+      if(i){
+        $("#parent #son").removeClass("fa fa-chevron-down").addClass("fa fa-chevron-up");i=0;}
+        else{
+          $("#parent #son").removeClass("fa fa-chevron-up").addClass("fa fa-chevron-down");i=1;
+        }
+
+      });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    var i=1;
+
+    $("#parent1").click(function(){
+      if(i){
+        $("#parent1 #son1").removeClass("fa fa-chevron-down").addClass("fa fa-chevron-up ");i=0;}
+        else{
+          $("#parent1 #son1").removeClass("fa fa-chevron-up").addClass("fa fa-chevron-down ");i=1;
+        }
+
+      });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    var i=1;
+
+    $("#main").click(function(){
+      if(i){
+        $("#main #second").removeClass("fa fa-align-justify").addClass("fa fa-align-left ");i=0;}
+        else{
+          $("#main #second").removeClass("fa fa-align-left ").addClass("fa fa-align-justify ");i=1;
+        }
+
+      });
+	   var BroUserId = localStorage.getItem("BroEmpData");
+	  var BroId = localStorage.getItem("count");
+  $('#BroUserName').html(BroUserId);
+	   $('#BroUserName1').html(BroUserId);
+	  $('#BroVisiting').html(BroId);
+  });
+
+</script>
+<script>
+ function BroDateShow(){
+    var BroDate = "";
+
+    var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+		
+    var now = new Date();
+
+    BroDate += "Date: " + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() + " Time: " + now.getHours() +":" + now.getMinutes() + ":" + now.getSeconds();
+    document.getElementById("BroShow").innerHTML = BroDate;
+	
+}setInterval(BroDateShow, 1000);
+	
+</script>
+</body>
+
+</html>

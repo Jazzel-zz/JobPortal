@@ -1,0 +1,54 @@
+﻿div {
+    position: relative;
+}
+
+div.left{
+    width: 40%;
+    float: left;
+    height: 100px;
+}
+
+div.right {
+    width: 60%;
+    float: left;
+}
+
+#section1 {
+    padding: 50px;
+    color: white;
+}
+
+#section2 {
+    padding: 50px;
+    color: white;
+}
+
+#section3 {
+    padding: 50px;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul.navbar-nav > li.nav-item {
+    transition: 0.3s ease;
+}
+
+    ul.navbar-nav > li.nav-item:hover {
+        border-bottom: 2px solid #dc3545;
+    }
+
+div.hover_effect {
+    transition: 0.3s ease;
+    height: auto;
+}
+
+    div.hover_effect:hover {
+        border-left: 10px solid #dc3545;
+    }
+
+
+body {
+}

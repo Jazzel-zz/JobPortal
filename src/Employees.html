@@ -1,0 +1,445 @@
+<!doctype html>
+<html ng-app="Brogrammers_emps">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="js/Employees.json">
+</script>
+<script src="Scripts/jquery-3.0.0.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<link href="Content/bootstrap.min.css" rel="stylesheet" />
+<script src="Scripts/angular.min.js"></script>
+<script src="Scripts/Brogrammers_emp_data.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link href ="webfonts/all.css"></link>
+	
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="hover.css">
+	<style>
+    div {
+        position: relative;
+    }
+    div.left{
+        width: 40%;
+        float: left;
+        height: 100px;
+    }
+    div.right{
+        width: 60%;
+        float: left;
+    }
+    .height {
+        height: 70px;
+    }
+    #section1 {
+        padding: 50px;
+        color: white;
+    }
+    #section2 {
+        padding: 50px;
+        color: white;
+    }
+    #section3 {
+        padding: 50px;
+        color: white;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    ul.navbar-nav > li.nav-item {
+        transition: 0.3s ease;
+    }
+    ul.navbar-nav > li.nav-item:hover {
+        border-bottom: 2px solid #dc3545;
+        
+    }
+    div.hover_effect{
+        transition:  0.3s ease;
+        height: auto;
+    }
+    div.hover_effect:hover {
+        border-left: 10px solid #dc3545;
+    }
+</style>
+</head>
+<script>
+    $(document).ready(function(){
+      $("#search_bro").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#search_emp tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+<body ng-controller="Emp_fetch_bro">
+	
+  <div class=" Brogrammers container-fluid d-lg-block d-none " id="starttop" style="background-color: #233040;"> 
+
+    <div class="Brogrammers row" >
+
+     <button class="btn btn-danger ml-auto" id="btn_md">Visitors: <span id="BroVisiting"></span></button>
+  </div>
+</div>
+
+<nav class=" Brogrammers navbar navbar-expand-lg navbar-dark border-bottom p-0 shadow-md" id="one" style="position: relative;background-color:#233040 ">
+  <span class=" Brogrammers navbar-toggler ml-2 mt-2"  data-toggle="collapse" id="main" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:hidden;">
+    <span class=" Brogrammers fa fa-align-justify text-light" id="second" style="font-size: 29px;"></span>
+  </span>
+  <div class=" Brogrammers navbar-brand text-info d-block d-lg-none ml-2" href="#"><a href="indexcopy.html"><img src="images/logo1.png" height="50px"  class=" Brogrammers ml-5" ></a></div>
+    <a class=" Brogrammers navbar-brand d-none d-lg-block" href="indexcopy.html" style="color: transparent;">
+   <img src="images/logo1.png" height="55px">aaaa</a>
+    <div class=" Brogrammers navbar-header d-block d-lg-none mt-sm-2">
+
+    
+     
+ <a class="nav-item avatar dropdown  d-none d-lg-block  mr-1" style="margin-top: -15%">
+  <div class="nav-link dropdown-toggle-" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+  aria-expanded="false">
+ <a href="" class="text-decoration-none text-light"><span type="" name="" id="BroUserName">user</span></a>
+  <img src="images/user.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+  <i class=" Brogrammers fa fa-chevron-down text-light" style="font-size: 9px"></i>
+
+</div>
+<div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenu">
+  
+  <a class="dropdown-item  items" href="INDEX.html">Logout</a>
+  
+</div>
+</a>
+
+
+
+   </div>
+
+
+   <div class=" Brogrammers collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class=" Brogrammers navbar-nav mr-auto">
+      <li class=" Brogrammers nav-item active ">
+
+
+        <div class=" Brogrammers nav-link d-block d-lg-none ">
+          <div class=" Brogrammers container-fluid p-0">
+            <div class=" Brogrammers accordion" id="accordionExample" style="border-radius: 0px 0px 0px 0px"> 
+              <div class=" Brogrammers card" style="border-radius: 0px 0px 0px 0px">
+                <div class=" Brogrammers card-header heffect" id="parent" data-toggle="collapse" data-target="#collapseOne" id="headingOne">
+                  <h5 class=" Brogrammers mb-0">
+                    <div   aria-expanded="true" aria-controls="collapseOne">
+                      <span class=" Brogrammers text-secondary "><a href="employees.html" class="text-decoration-none text-secondary">View Candidates</a></span>
+
+                      
+                      <div>
+                      </h5>
+                    </div>
+
+                    <div id="collapseOne" class=" Brogrammers collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class=" Brogrammers card-body p-0">
+
+                        <div class=" Brogrammers row p-0">
+                         
+                        </div>
+                      </div>
+                    </div>
+                   <div class=" Brogrammers card">
+                      <div class=" Brogrammers card-header heffect" id="headingThree">
+                        <h5 class=" Brogrammers mb-0">
+                          
+                            <span class=" Brogrammers text-secondary "><a href="#sample" class="text-decoration-none text-secondary">Sample Questions</a></span>
+
+                           
+                          </h5>
+                        </div>
+                      
+                      </div>
+                   
+                      <div class=" Brogrammers card">
+                        <div class=" Brogrammers card-header heffect" id="headingFour">
+                          <h5 class=" Brogrammers mb-0">
+                              <span class=" Brogrammers text-secondary"><a href="#what" class="text-decoration-none text-secondary">Tips for Interviews</a></span>
+
+                          </h5>
+                        </div>
+  
+                      </div>
+                      <div class=" Brogrammers card">
+                        <div class=" Brogrammers card-header heffect">
+                          <h5 class=" Brogrammers mb-0">
+
+                              <span class=" Brogrammers text-secondary "><a href="contact.html" class="text-decoration-none text-secondary">Contact Us</a></span>
+
+                          </h5>
+                        </div>
+  
+                      </div>
+                      <div class=" Brogrammers card" style="border-radius: 0px 0px 0px 0px;border-bottom: hidden;">
+                        <div class=" Brogrammers card-header heffect" id="headingSix">
+                          <h5 class=" Brogrammers mb-0">
+                            
+                              <span class=" Brogrammers text-secondary "><a href="aboutus.html" class="text-decoration-none text-secondary">About Us</a></span>
+                            
+                          </h5>
+                        </div>
+                        
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </li>
+              <li class=" Brogrammers nav-item active d-none d-lg-block h6 ">
+            <a class=" Brogrammers nav-link mx-1 bro_mj hvr-grow" href="indexcopy.html">
+              <span >Home</span> 
+            </a>
+
+            
+      
+       </li>
+              
+
+
+
+<li class=" Brogrammers nav-item d-none d-lg-block h6">
+            <a class=" Brogrammers nav-link mx-1 bro_mj hvr-grow" href="#sample">
+              <span >Sample Questions </span> 
+            </a>
+
+            
+      
+       </li>
+        
+
+
+
+       <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+
+        <a class=" Brogrammers nav-link mx-1 bro_mj hvr-grow" href="#what">
+          <span>Tips for Interviews</span> 
+        </a>
+
+
+      </li>
+  <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+          <a class=" Brogrammers nav-link  mx-1 bro_mj  hvr-grow" href="Employees.html">
+            <span >View Candidates </span> 
+          </a>
+        </li>
+          
+
+      <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+        <a class=" Brogrammers nav-link  mx-1 bro_mj  hvr-grow" href="contact.html">
+          <span >Contact Us </span> 
+        </a>
+
+      </li>
+       <li class=" Brogrammers nav-item d-none d-lg-block h6 ">
+        <a class=" Brogrammers nav-link  mx-1 bro_mj  hvr-grow" href="aboutus.html">
+          <span >About Us</span> 
+        </a>
+
+      </li>
+    </ul>
+    <ul class=" Brogrammers navbar-nav mt-md-2 ">
+   
+    <li class="nav-item avatar dropdown  d-none d-lg-block  mr-1" style="margin-top: -15%">
+  <div class="nav-link dropdown-toggle-" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+  aria-expanded="false">
+ <a href="" class="text-decoration-none text-light"><span type="" name="" id="BroUserName1">user</span></a>
+  <img src="images/user.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+  <i class=" Brogrammers fa fa-chevron-down" style="font-size: 9px"></i>
+
+</div>
+<div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenu">
+
+  <a class="dropdown-item  items" href="INDEX.html">Logout</a>
+  
+</div>
+</li> 
+
+  </ul>
+</div>
+</nav>
+	   <div class="container-fluid bg-dark float-left">
+	    <form class="form-inline float-right bg-dark">
+                <input class="form-control mr-sm-2" id="search_bro" type="text" placeholder="Search...">
+                <button class="btn btn-danger" type="submit">Search</button>
+              </form>
+	   </div>
+       
+              <table  class="table table-fluid table-hover table-bordered p-0">
+                    <thead class="thead-dark">
+                        <tr>
+                 <!--                                 <th>ID</th>        -->
+                            <th>First Name</th>
+                            <th>Last Name</th>
+           
+           
+                <!--                     <th>Father's Name</th>        -->
+                <!--                     <th>Cnic</th>        -->
+                            <th>Gender</th>
+                <!--                     <th>Martial status</th>        -->
+                <!--                     <th>DOB</th>        -->
+                            <th>Email</th>
+                            <th>Phone</th>
+                <!--                     <th>Address</th>        -->
+                            <th>Country</th>
+                            <th>State</th>
+                            <th>City</th>
+                <!--                     <th>Postal code</th>        -->
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="search_emp">
+                        <tr ng-repeat="x in empData">
+                     <td style="display: none">{{x.id}}</td>  
+                                <td>{{x.first_name}}</td>
+                                <td>{{x.last_name}}</td>
+                   <!--         <td>{{x.father_name}}</td>        -->
+                    <!--             <td>{{x.cnic}}</td>        -->
+                                <td>{{x.gender}}</td>
+                        <!--         <td>{{x.martial_status}}</td>        -->
+                        <!--         <td>{{x.dob}}</td>        -->
+                                <td>{{x.email}}</td>
+                                <td>{{x.phone}}</td>
+                        <!--         <td>{{x.address}}</td>        -->
+                                <td>{{x.country}}</td>
+                                <td>{{x.state}}</td>
+                                <td>{{x.city}}</td>
+                        <!--         <td>{{x.postal_code}}</td>        -->
+                                <td>{{x.exp_level}}</td>
+                        </tr>
+                    </tbody>
+                
+                </table>
+                
+        
+    <br>
+<div class="modal fade" id="userDetails">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Employee Details</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/user.png" class="rounded-circle img-fluid ml-3" id="emp-img" style="height: 180px">
+                    </div>
+                    <div class="col">
+                        <ul id="brogrammermodel">
+							
+                        </ul>  
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+	                            <footer class="" style="background-color: #dfdfdf">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-3 mt-5 mb-5">
+                                    <img src="images/logo1.png" width="150px" class="img-fluid" alt="">
+                                    <br> <br> <br> <br>
+                                    <h5>Subscribe Now</h5>
+                                    <form action="" class="input-group">
+                                      <input type="email" required class="form-control shadow-sm">
+                                      <div class="input-group-append">
+                                        <button class="btn btn-dark" type="submit">Send</button>
+                                      </div>
+
+                                    </form>
+                                  </div>
+                                  <div class="col-md-4 mt-5 mb-5">
+                                    <h5>Information</h5>
+                                    <ul class="list-unstyled">
+                                      <li class="mb-2"><a href="#" class="text-decoration-none text-dark ">
+                                        job-Connect is the #1 job site in the world1 with over 1 million unique visitors every month. Job Connect strives to put job seekers first, giving them free access to search for jobs,post CVs, and research companies. Every day, we connect thousands of people to new opportunities.
+                                      </li> 
+                                    </ul>
+                                  </div>
+                                  
+                                  <div class="col-md-2 mt-5 mb-5">
+                                    <h5>Our Services</h5>
+                                    <ul class="list-unstyled">
+                                      <li class="mb-2">
+                                        <a href="#what" class="text-decoration-none text-dark">What to Avoid </a></li>
+                                      <li class="mb-2"><a href="#sample" class="text-decoration-none text-dark">Sample Question</a></li> 
+                                      <li class="mb-2"><a href="#interview" class="text-decoration-none text-dark">Interview Etiqauetes</a></li> 
+                                      <li class="mb-2"><a href="aboutus1.html" class="text-decoration-none text-dark">About Us</a></li> 
+                                      <li class="mb-2"><a href="contact1.html" class="text-decoration-none text-dark">Contact Us</a></li> 
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3 mt-5 mb-5">
+                                    <h5>Contact Us</h5>
+                                    <span class="fa fa-phone mr-3 mb-3"></span><i>0213-2139765</i> <br>
+                                    <span class="fa fa-map-marker-alt mr-3 mb-3"></span><i>MC-1675, Defence, Karachi.</i> <br>
+                                    <span class="fa fa-envelope mr-3"></span><i>job-connect@gmail.com</i>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href=""><span class="fab fa-facebook-square fa-lg ml-4 mr-4"></span></a>
+                                    <a href=""><span class="fab fa-twitter-square fa-lg mr-4"></span></a>
+                                    <a href=""><span class="fab fa-instagram fa-lg mr-4"></span></a>
+                                    <a href=""><span class="fab fa-google-plus-square fa-lg mr-4"></span></a>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="text-center p-2 small">
+                                  <p class="">©2019 <a href="index.html">Jobs Connect</a> , Inc. All rights reserved.</p>
+
+                                </div>
+                              </div>
+                            </footer>
+<script>
+
+
+    $(function(){
+    $('.table tbody tr').each(function(){
+        $(this).css('cursor','pointer').hover(
+            function(){ 
+                $(this).addClass('active');
+            },  
+            function(){ 
+                $(this).removeClass('active'); 
+            }).click( function(){ 
+			 var values = "";
+				var $columns = $(this).find('td');
+			var brogrammeraidt=parseInt($columns[0].innerHTML);
+			var brogrammermodel=document.getElementById("brogrammermodel");
+			brogrammermodel.innerHTML="";
+			for(var brogrammerai=0;brogrammerai<newData.length;brogrammerai++){
+				if(newData[brogrammerai].id==brogrammeraidt){
+					brogrammermodel.innerHTML+='<li>Name: '+newData[brogrammerai].first_name+'  '+newData[brogrammerai].last_name+' </li><li>Father\'s name: '+newData[brogrammerai].father_name+'</li><li>Gender: '+newData[brogrammerai].gender+'</li> <li>Martial status: '+newData[brogrammerai].martial_status+'</li><li> Date of birth: '+newData[brogrammerai].dob+'</li><li>Email: '+newData[brogrammerai].email+'</li><li>Phone number: '+newData[brogrammerai].phone+'</li><li>Address: '+newData[brogrammerai].address+'</li><li>Country: '+newData[brogrammerai].country+'</li><li>State: '+newData[brogrammerai].state+'</li> <li>City: '+newData[brogrammerai].city+'</li><li>Postal code: '+newData[brogrammerai].postal_code+'</li><li>Experience: '+newData[brogrammerai].exp_level+'</li>';
+					break;
+				}
+			}
+               $('.modal').modal('show');
+            }
+        );
+    });
+});
+</script>
+<script>
+	   	var BroUserId = localStorage.getItem("BroEmpData");
+	  var BroId = localStorage.getItem("count");
+  $('#BroUserName').html(BroUserId);
+	   $('#BroUserName1').html(BroUserId);
+	  $('#BroVisiting').html(BroId);
+	   </script>
+</body>
+</html>
